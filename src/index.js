@@ -57,7 +57,7 @@ function returnCounter(number) {
     var number;
     function F (){
         var res;
-        res = number + ;
+        res = number + 1;
         return res;
     };
     return F;
