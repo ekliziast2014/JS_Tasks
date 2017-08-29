@@ -16,8 +16,8 @@ function returnFirstArgument(arg) {
  Значение по умолчанию второго аргумента должно быть 100
  */
 function defaultParameterValue(a, b) {
-    b = b || 100;
-    var sum = a + b;
+    var b = b || 100,
+        sum = a + b;
     return sum;
 };
 
@@ -41,10 +41,10 @@ function returnArgumentsArray() {
  Функция должна принимать другую функцию и возвращать результат вызова переданной функции
  */
 function returnFnResult(fn) {
-    function fn () {
-        return fn;
+    function fn2 () {
+        return fn2;
     };
-    return fn();
+    return fn2();
 };
 
 /*
@@ -57,10 +57,10 @@ function returnCounter(number) {
     var number;
     function F (){
         var res;
-        res = number + 1
+        res = number + ;
         return res;
     };
-    return F();
+    return F;
 };
 
 /*
