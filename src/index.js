@@ -42,7 +42,7 @@ function returnArgumentsArray() {
  */
 function returnFnResult(fn) {
     function fn2 () {
-        return fn2;
+        return fn2 ();
     };
     return fn2();
 };
