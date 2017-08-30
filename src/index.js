@@ -41,10 +41,7 @@ function returnArgumentsArray() {
  Функция должна принимать другую функцию и возвращать результат вызова переданной функции
  */
 function returnFnResult(fn) {
-    function fn2 () {
-        return fn2 ();
-    };
-    return fn2();
+    return fn();
 };
 
 /*
@@ -54,10 +51,9 @@ function returnFnResult(fn) {
  При вызове F, переданное число должно быть увеличено на единицу и возвращено из F
  */
 function returnCounter(number) {
-    var number;
-    function F (){
-        var res;
-        res = number + 1;
+    var number = number || 0;
+    function F() {
+        var res = number + 1;
         return res;
     };
     return F;
@@ -71,13 +67,12 @@ function returnCounter(number) {
  *!/
  function bindFunction(fn) {
  }
-
+*/
  export {
  returnFirstArgument,
  defaultParameterValue,
  returnArgumentsArray,
  returnFnResult,
- returnCounter,
- bindFunction
+ returnCounter
+ // bindFunction
  }
- */
