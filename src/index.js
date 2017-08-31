@@ -7,7 +7,7 @@
  */
 function returnFirstArgument(arg) {
     return arg;
-};
+}
 
 /*
  Задание 2:
@@ -19,7 +19,7 @@ function defaultParameterValue(a, b) {
     var b = b || 100,
         sum = a + b;
     return sum;
-};
+}
 
 /*
  Задание 3:
@@ -29,11 +29,11 @@ function defaultParameterValue(a, b) {
  */
 function returnArgumentsArray() {
     var array = [];
-    for (i = 0; i < arguments.length; i++){
+    for (i = 0; i < arguments.length; i++) {
         array.push(arguments[i]);
     }
     return array;
-};
+}
 
 /*
  Задание 4:
@@ -55,24 +55,24 @@ function returnCounter(number) {
     function F() {
         var res = number + 1;
         return res;
-    };
+    }
     return F;
-};
+}
 
 /*
  Задание 6 *:
 
  Функция должна принимать другую функцию (F) и некоторое количество дополнительных аргументов
  Функция должна привязать переданные аргументы к функции F и вернуть получившуюся функцию
- *!/
- function bindFunction(fn) {
- }
-*/
- export {
- returnFirstArgument,
- defaultParameterValue,
- returnArgumentsArray,
- returnFnResult,
- returnCounter
- // bindFunction
- }
+ */
+function bindFunction(fn) {
+}
+
+export {
+    returnFirstArgument,
+    defaultParameterValue,
+    returnArgumentsArray,
+    returnFnResult,
+    returnCounter,
+    bindFunction
+}
