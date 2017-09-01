@@ -27,13 +27,15 @@ function defaultParameterValue(a, b) {
  Функция должна возвращать все переданные в нее аргументы в виде массива
  Количество переданных аргументов заранее неизвестно
  */
-function returnArgumentsArray() {
-    var array = [];
-    for (i = 0; i < arguments.length; i++) {
-        array.push(arguments[i]);
+
+    function returnArgumentsArray() {
+        var array = [];
+        for (var i = 0; i < arguments.length; i++) {
+            array[i] = arguments[i];
+        }
+        return array;
     }
-    return array;
-}
+
 
 /*
  Задание 4:
@@ -51,14 +53,12 @@ function returnFnResult(fn) {
  При вызове F, переданное число должно быть увеличено на единицу и возвращено из F
  */
 function returnCounter(number) {
-    var number = number || 0;
     function F() {
-        var res = number + 1;
-        return res;
+        number = number + 1;
+        return number;
     }
     return F;
 }
-
 /*
  Задание 6 *:
 
@@ -66,6 +66,10 @@ function returnCounter(number) {
  Функция должна привязать переданные аргументы к функции F и вернуть получившуюся функцию
  */
 function bindFunction(fn) {
+    return F;
+    function F() {
+        
+    };
 }
 
 export {
